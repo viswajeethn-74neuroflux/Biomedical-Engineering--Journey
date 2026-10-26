@@ -51,3 +51,11 @@ Allow more than two input signals.
 Let the user set the threshold.
 
 Visualize signal strength using a graph.
+
+Implementation
+
+ Uses lists to store a variable number of input signals.
+- Uses a `for` loop to collect user-defined inputs.
+- Uses `append()` to add each signal to the list.
+- Uses `sum()` to calculate the total signal strength.
+- Compares the total against a configurable threshold using conditional statements.
