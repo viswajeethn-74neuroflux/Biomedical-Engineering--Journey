@@ -1,16 +1,20 @@
-threshold = 10
+threshold = int(input("Enter the threshold: "))
+number_of_signals = int(input("How many signals? "))
 
-signal1 = int(input("Enter the first signal: "))
-signal2 = int(input("Enter the second signal: "))
+signals = []
 
-total = signal1 + signal2
+for i in range(number_of_signals):
+    signal = int(input("Enter signal strength: "))
+    signals.append(signal)
 
+total = sum(signals)
+
+print("Signals:", signals)
 print("Total signal:", total)
 
 if total >= threshold:
     print("Neuron fired!")
-elif total >= 5:
+elif total >= threshold / 2:
     print("Signal reaching threshold")
 else:
     print("Low signal")
-thsi code i should put
